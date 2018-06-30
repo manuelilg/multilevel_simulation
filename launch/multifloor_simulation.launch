@@ -1,7 +1,7 @@
 <launch>
   <env name="GAZEBO_MODEL_PATH" value="/opt/ros/kinetic/share"/>
 
-  <include file="$(find multilevel_building)/launch/elevator_world.launch" />
+  <include file="$(find multilevel_building)/launch/multilevel_building_world.launch" />
 
   <arg name="urdf_file" default="$(find xacro)/xacro --inorder '$(find turtlebot_description)/robots/kobuki_hexagons_kinect_velodyne.urdf.xacro'"/>
   <param name="robot_description" command="$(arg urdf_file)"/>
